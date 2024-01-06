@@ -1,0 +1,24 @@
+{
+  "name": "p1bg",
+  "version": "0.0.1",
+  "description": "first",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarrisonPursley/P1BG.git"
+  },
+  "author": "Harrison Pursley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarrisonPursley/P1BG/issues"
+  },
+  "homepage": "https://github.com/HarrisonPursley/P1BG#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "http-server": "^14.1.1"
+  }
+}
