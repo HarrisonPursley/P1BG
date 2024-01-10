@@ -1,3 +1,4 @@
 {
-    "explorer.openEditors.sortOrder": "editorOrder"
+    "explorer.openEditors.sortOrder": "editorOrder",
+    "explorer.sortOrder": "type"
 }
