@@ -1,6 +1,6 @@
 move(inventory).to(0, 0)
 
-const character = newImage('assets/green-character/static.gif')
+const character = newImage('assets/Player/Player-Placeholder.png')
 
 function handleDirectionChange(direction){
     //Static

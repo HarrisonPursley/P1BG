@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run open",
-    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\""
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"start http://localhost:1234/\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "detect-collisions": "^9.2.3"
   }
 }
