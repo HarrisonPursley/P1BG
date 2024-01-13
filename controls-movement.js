@@ -36,16 +36,16 @@ function move(element) {
         document.addEventListener('keydown', function(e){
             if(e.repeat) return;
         
-            if(e.key === 'ArrowLeft'){
+            if(e.key === 'a'){
                 direction = 'west'
             }
-            if(e.key === 'ArrowUp'){
+            if(e.key === 'w'){
                 direction = 'north'
             }
-            if(e.key === 'ArrowRight'){
+            if(e.key === 'd'){
                 direction = 'east'
             }
-            if(e.key === 'ArrowDown'){
+            if(e.key === 's'){
                 direction = 'south'
             }
             callback(direction)
