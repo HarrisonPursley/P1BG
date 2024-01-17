@@ -9,6 +9,7 @@ Harrison Pursley - Project 1: Browser Game
 <br>0.0.7: Set up enemy controls, environment, collision using NPM Detect-Collisions</br>
 <br>0.0.8: Created collisions and render code for walls</br>
 <br>0.0.9: Added enemies and some enemy control code</br>
+<br>0.1.0: Fixed up controls-enemy and added logic for preventing wall clipping</br>
 <br>CREDIT</br>
 <br>Movement Controls and Direction Change: Callback Practice</br>
 <br>New Image Script: Callback Practice</br>
