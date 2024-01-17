@@ -10,3 +10,4 @@ Harrison Pursley - Project 1: Browser Game
 <br>CREDIT</br>
 <br>Movement Controls and Direction Change: Callback Practice</br>
 <br>New Image Script: Callback Practice</br>
+<br>Collision code: https://www.npmjs.com/package/detect-collisions</br>
