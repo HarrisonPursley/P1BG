@@ -62,4 +62,18 @@ function move(element) {
         to: moveToCoordinates,
         withArrowKeys: moveWithArrowKeys
     }
+    system.checkAll(function(response: Response) {
+        if (response.a.isCharacter && response.b.isWall) {
+            // Player can't move through walls
+            const { overlapV } = response;
+            response.a.setPosition(
+                response.a.x - overlapV.x,
+                response.a.y - overlapV.y
+            );
+        } else if (response.a.isBullet && response.b.isEnemy) {
+            // Bullet hits enemy
+            system.remove(response.a); // Remove bullet
+            response.b.takeDamage(); // Damage enemy
+        }
+    });
 }

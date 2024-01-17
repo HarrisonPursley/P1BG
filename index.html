@@ -10,21 +10,30 @@
             flex-direction: row;
             justify-content: space-evenly;
         }
+        canvas-container{
+            width: 640px;
+            height: 480px;
+        }
         canvas {
             background-color: #000000;
+            top: 50%;
+            left: 50%;
+            object-fit: contain;
         }
     </style>
 </head>
 <body>
     <main>
     </main>
-    <div class="canvas">
-        <script src="./controls-movement.js"></script>
-        <script src="./controls-enemy.js"></script>
-        <script src="./environment.js"></script>
-        <script src="./index.js"></script>
-        <script src="./new-image.js"></script>
-        <script src="./pixi.js"></script>
+    <div class="canvas-container">
+        <div class="canvas">
+            <script src="\controls-movement.js"></script>
+            <script src="\controls-enemy.js"></script>
+            <script src="\environment.js"></script>
+            <script src="\index.js"></script>
+            <script src="\new-image.js"></script>
+            <script src="\pixi.js"></script>
+        </div>
     </div>
 </body>
 </html>
