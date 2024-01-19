@@ -18,6 +18,7 @@ var config = {
 
 var game = new Phaser.Game(config);
 var walls;
+var playerCanMove = false;
 var playerHealth = 3;
 var playerHealthText;
 var playerStamina = 5;
@@ -28,8 +29,10 @@ var gameOverText;
 // Preload assets
 function preload ()
 {
-    // Title Card
+    // Title Cards
     this.load.image('title-card', '/assets/UI/TitleCard.png')
+    this.load.image('you-died', '/assets/UI/YouDied.png')
+    this.load.image('victory', '/assets/UI/Victory.png')
     
     // Entities
     // Player + anims
@@ -151,13 +154,8 @@ function create ()
     hearts = this.physics.add.staticGroup({
         key: 'heart'
     });
-    function blockingDamage()
-    {
-        if(isBlocking)
-        {
 
-        }
-    }
+
     function collectHearts (player, heart)
     {
         heart.disableBody(true, true);
@@ -181,6 +179,11 @@ function create ()
         playerStamina -= 1;
         playerStaminaText.setText(playerStamina + ' SP');
     }
+    function blockDamage (player, enemyMelee)
+    {
+        playerStamina -= 1;
+        playerStaminaText.setText(playerStamina + ' SP');
+    }
     function gameOver (player)
     {
         if (playerHealth < 1)
@@ -200,7 +203,10 @@ function create ()
 
 function update ()
 {
-    if (cursors.left.isDown){
-        player.setVelocityX(-160);
-    }
+    this.input.keyboard.on('keydown-W', listener)
+    this.input.keyboard.on('keydown-A', listener)
+    this.input.keyboard.on('keydown-S', listener)
+    this.input.keyboard.on('keydown-D', listener)
+    this.input.keyboard.on('keydown-SPACE', listener)
+    this.input.keyboard.on('keydown-SHIFT', listener)
 }
