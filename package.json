@@ -2,7 +2,7 @@
   "name": "p1bg",
   "version": "0.0.1",
   "description": "first",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "npm run open",
     "open": "concurrently \"http-server -a localhost -p 1234\" \"start http://localhost:1234/\""
@@ -23,5 +23,8 @@
   },
   "dependencies": {
     "detect-collisions": "^9.2.3"
+  }
+  {
+    "type": "new-image"
   }
 }
