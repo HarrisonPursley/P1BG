@@ -13,6 +13,7 @@ Harrison Pursley - Project 1: Browser Game
 <br>0.1.1: Added Phaser and Tiled addons to project</br>
 <br>0.1.2: Created and added player idle and movement anims using Phaser</br>
 <br>0.1.3: Created and implemented several assets inside Phaser config file</br>
+<br>0.1.4: Fixing up Phaser processes in HTML and JS</br>
 <br>CREDIT</br>
 <br>Movement Controls and Direction Change: Callback Practice</br>
 <br>New Image Script: Callback Practice</br>
