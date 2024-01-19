@@ -7,18 +7,6 @@ const {
     Polygon,
 } = require("detect-collisions");
 
-// Melees
-const melee01 = new Box((28, 36), 1, 1, isTrigger);
-const melee02 = new Box((12, 44), 1, 1, isTrigger);
-const melee03 = new Box((60, 44), 1, 1, isTrigger);
-
-// Archers
-const archer01 = new Box((28, 20), 1, 1, isTrigger);
-const archer02 = new Box((68, 28), 1, 1, isTrigger);
-const archer03 = new Box((52, 68), 1, 1, isTrigger);
-
-// Boss
-const boss = new Box((11, 68), 3, 3, isTrigger);
 import { moveToCoordinates } from './controls-movement.js';
 function controlEnemies(left, bottom, callback) {
     let direction = null;

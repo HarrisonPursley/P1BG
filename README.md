@@ -10,6 +10,8 @@ Harrison Pursley - Project 1: Browser Game
 <br>0.0.8: Created collisions and render code for walls</br>
 <br>0.0.9: Added enemies and some enemy control code</br>
 <br>0.1.0: Fixed up controls-enemy and added logic for preventing wall clipping</br>
+<br>0.1.1: Added Phaser and Tiled addons to project</br>
+<br>0.1.2: Created and added player idle and movement anims using Phaser</br>
 <br>CREDIT</br>
 <br>Movement Controls and Direction Change: Callback Practice</br>
 <br>New Image Script: Callback Practice</br>

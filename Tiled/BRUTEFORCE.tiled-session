@@ -1,0 +1,25 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+    },
+    "last.imagePath": "C:/Users/Zeus/thrivedx-new/Milestone 1 Browser Game",
+    "map.height": 15,
+    "map.lastUsedFormat": "tmx",
+    "map.width": 20,
+    "openFiles": [
+    ],
+    "project": "BRUTEFORCE.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
